@@ -1,0 +1,111 @@
+@import url(./reset.css);
+
+/* Arrumar o enemy (img) */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #5C96FC;
+}
+
+.menu {
+    height: 120px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(208, 100%, 97%);
+    border-bottom: white solid 7px;
+}
+
+[class|="menu"] h2 {
+    margin-top: .8rem;
+}
+
+.panel {
+    padding-top: 1rem;
+    height: 100%;
+    background-image: url(../images/level_background-3.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: bottom left;
+    background-origin: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #00ff00;
+    background-image: url(../images/brick-block.png);
+    background-size: cover;
+    border-top: 1px;
+    border-bottom: 1px;
+}
+
+.square:hover {
+    cursor:crosshair;
+}
+
+.enemy {
+    background-color: #d2691e;
+    background-image: url(../images/jjj.avif);
+    background-size: 210px 210px, 100%;
+    background-position: -30px -30px;
+}
+
+.menu-lives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-lives img {
+    width: 60px;
+    height: 29.7px;
+    object-fit: cover;
+    object-position: 0px 3px;
+    background-origin: top left ;
+}
+
+footer {
+    background-image: url(../images/stone-block.png);
+    height: 46px;
+    background-size: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: url(../images/stone-block.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+}
+
+header h1 {
+    background-color: rgb(240, 156, 114);
+    border: #000000 2px solid;
+    width: 37rem;
+    padding: 5px;
+    text-align: center;
+}
+
+footer p {
+    background-color: rgb(240, 156, 114);
+    border: #000000 2px solid;
+    background-size: contain;
+    padding: 5px;
+    width: 52rem;
+    text-align: center;
+}
