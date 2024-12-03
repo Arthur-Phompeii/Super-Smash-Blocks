@@ -85,6 +85,7 @@ function gameOver() {
 function initialize() {
     addListenerHitBox();
     gameOver();
+    alert("Para recomeçar o jogo recarregue a página ou aperte f5")
 }
 
 initialize();
